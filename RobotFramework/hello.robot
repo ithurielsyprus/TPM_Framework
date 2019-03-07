@@ -1992,7 +1992,7 @@ Check Negative Values For Deferred Deal
     wait keyword    ${GLOBAL_TPM_BDM_Deferred_Deal_Negative_Check_Column_Remove_Focus_Px_xpath}    Segment
     Click Element    ${GLOBAL_TPM_BDM_Deferred_Deal_Negative_Check_Column_Remove_Focus_Px_xpath}
     ${After_result}=    Get Text    ${GLOBAL_TPM_BDM_Deferred_Deal_Negative_Check_Column_Px_xpath}
-    Run Keyword And Continue On Failure    Run Keyword If    ${After_result}==${TEST_DATA_BDM_Baseline_Decimal_Brand_Value}    Fail    its invalid value
+    Run Keyword And Continue   On Failure    Run Keyword If    ${After_result}==${TEST_DATA_BDM_Baseline_Decimal_Brand_Value}    Fail    its invalid value
 
 check First loop value for shipment profile
     ${GLOBAL_TPM_BDM_Shipment_Profile_Table_Edit_Check_Columns_xpath}    fetch_data_for_given_data_key_from_given_datasheet_of_global_locator_ids_tpm_datafile    global_locator_ids    GLOBAL_TPM_BDM_Shipment_Profile_Table_Edit_Check_Columns_xpath
